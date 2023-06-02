@@ -19,6 +19,10 @@ DevTools:
 
 ![DevTools shows an tooltip that suggests using something different than `display: block`](media/screenshot.png "DevTools tooltip")
 
+`is-misused-css`:
+
+![](media/screenshot2.png)
+
 ## Usage
 
 In the browser:
