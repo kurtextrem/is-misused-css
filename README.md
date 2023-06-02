@@ -1,11 +1,14 @@
 # is-misused-css
 Check if CSS properties are correctly applied.
 
-Inspired by DevTools, which offers a helpful tooltip now when CSS properties are set, but don't apply to elements.
+Inspired by DevTools, which offers a helpful tooltip now when CSS properties are set, but don't apply to elements. The source-code is taken from the Chromium DevTools repository, so it will show
+the exactly same information, just as JavaScript API.
+
+Please note: `font-variation-settings` is currently not checked and can currently only be checked by the DevTools.
 
 Examples:
 
-```
+```css
 .a {
 	display: block;
 	align-items: center; /* <-- won't apply, because of 'display: block' => is misused */
