@@ -1,0 +1,14 @@
+{
+	"name": "is-misused-css",
+	"description": "Check if CSS properties applied work as intended.",
+	"dependencies": {
+		"rollup": "^3.23.0"
+	},
+	"scripts": {
+		"build": "rollup index.mjs --file is-misused-css.browser.js --format iife --name isMisusedCSS && rollup index.mjs --file is-misused-css.js --format cjs"
+	},
+	"main": "is-misused-css.js",
+	"module": "index.mjs",
+	"version": "0.0.3",
+	"repository": "github:kurtextrem/is-misused-css"
+}
