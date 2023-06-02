@@ -9,6 +9,6 @@
 	},
 	"main": "is-misused-css.js",
 	"module": "index.mjs",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"repository": "github:kurtextrem/is-misused-css"
 }
