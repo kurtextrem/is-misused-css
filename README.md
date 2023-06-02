@@ -6,7 +6,7 @@ the exactly same information, just as JavaScript API.
 
 Please note: `font-variation-settings` is currently not checked and can currently only be checked by the DevTools.
 
-Examples:
+Example:
 
 ```css
 .a {
@@ -14,6 +14,10 @@ Examples:
 	align-items: center; /* <-- won't apply, because of 'display: block' => is misused */
 }
 ```
+
+DevTools:
+
+![DevTools shows an tooltip that suggests using something different than `display: block`](media/screenshot.png "DevTools tooltip")
 
 ## Usage
 

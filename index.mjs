@@ -9,8 +9,8 @@ export function scan(el) {
 		console.warn('[font-variation-settings] Detected a value unequal to "normal", please use DevTools to check if it applies correctly')
 	}
 
-	const style = el.computedStyleMap()
-	const parentStyle = el.parentElement && el.parentElement.computedStyleMap()
+	const style = new Map(Object.entries(getComputedStyle(el)))
+	const parentStyle = el.parentElement && new Map(Object.entries(getComputedStyle(el.parentElement)))
 	const nodeName = el.nodeName
 	//const fonts = Array.from(document.fonts)
 	const hints = new Set()
