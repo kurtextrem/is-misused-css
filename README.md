@@ -29,7 +29,9 @@ In the browser:
 
 - Copy `is-misused-css.browser.js`
 - Run it in a new [DevTools snippet](https://developer.chrome.com/docs/devtools/javascript/snippets/), or use a [bookmarklet](https://caiorss.github.io/bookmarklet-maker/) generator
-- Run `[...document.querySelectorAll("*")].forEach(el => console.log(el, isMisusedCSS.scan(el))` in your console
+- Run `[...document.querySelectorAll("*")].forEach(el => {const r=isMisusedCSS.scan(el);if(r.size>0)console.log(el,r)})` in your console
+
+_(You will only see results if there is some misused CSS)_
 
 With npm/pnpm/yarn:
 
